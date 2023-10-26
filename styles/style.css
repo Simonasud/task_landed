@@ -45,7 +45,18 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: #1c1d26;
+  position: relative;
+}
+.main::after {
+  content: "";
+  position: absolute;
+  background-color: #272833bb;
+  inset: 0;
+}
+.main-main,
+.nav-bar {
+  z-index: 1;
+  position: relative;
 }
 .main-main {
   display: flex;
